@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.bfb2b041d391b266b29d3b7f1ee10212.js"
+  "/precache-manifest.e59d8335683d9135cab788d9f64c8959.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "games-on-sale"});
