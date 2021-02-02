@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.b2b5b9d89d26caec9ea02d69bf448e64.js"
+  "/precache-manifest.bfb2b041d391b266b29d3b7f1ee10212.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "games-on-sale"});
@@ -34,3 +34,4 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute("https://www.cheapshark.com/api/1.0/deals", new workbox.strategies.NetworkFirst({ "networkTimeoutSeconds":5, plugins: [] }), 'GET');
+workbox.routing.registerRoute("https://www.cheapshark.com/api/1.0/stores", new workbox.strategies.NetworkFirst({ "networkTimeoutSeconds":5, plugins: [] }), 'GET');
